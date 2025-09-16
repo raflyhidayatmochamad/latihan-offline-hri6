@@ -13,3 +13,6 @@ const user = {
 };
 
 user.sayHi();
+// Output:
+// Halo nama saya Budi
+// Setelah 1 detik, nama saya Budi
