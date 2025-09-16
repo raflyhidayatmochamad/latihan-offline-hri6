@@ -17,6 +17,9 @@ const hitung = (a, b, operasi) => {
     }
 };
 
+// Mengecek apakah hasil bukan null dan bukan NaN
+// Jika valid, tampilkan hasil perhitungan
+// Jika tidak valid (misal operasi salah atau input bukan angka), tampilkan pesan error
 const angka1 = parseFloat(prompt("Masukkan angka pertama: "));
 const angka2 = parseFloat(prompt("Masukkan angka kedua: "));
 const operasi = prompt("Pilih operasi (tambah, kurang, kali, bagi): ").toLowerCase();
