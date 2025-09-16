@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hitung BMI</title>
+  <link rel="stylesheet" href="bmi.css" />
+</head>
+<body>
+
+      <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Kalkulator Ku</div>
+    <ul class="nav-links">
+      <li><a href="website_kalkulator.html">Home</a></li>
+      <li><a href="index.html">Kalkulator</a></li>
+      <li><a href="suhu.html">Kalkulator Konversi</a></li>
+      <li><a href="bmi.html">Kalkulator BMI</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Hitung BMI</h1>
+
+    <label for="berat">Berat Badan (kg):</label>
+    <input type="number" id="berat" placeholder="Masukkan berat badan" />
+
+    <label for="tinggi">Tinggi Badan (cm):</label>
+    <input type="number" id="tinggi" placeholder="Masukkan tinggi badan" />
+
+    <button onclick="hitungBMI()">Hitung BMI</button>
+
+    <p id="hasil">Hasil BMI akan muncul di sini</p>
+  </div>
+
+  <script src="bmi.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Sederhana</title>
+  <!-- Hubungkan ke file CSS -->
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Kalkulator Ku</div>
+    <ul class="nav-links">
+      <li><a href="website_kalkulator.html">Home</a></li>
+      <li><a href="index.html">Kalkulator</a></li>
+      <li><a href="suhu.html">Kalkulator Konversi</a></li>
+      <li><a href="bmi.html">Kalkulator BMI</a></li>
+    </ul>
+  </nav>
+
+  <div class="calculator-container">
+    <h2>Kalkulator Sederhana</h2>
+
+    <input type="number" id="angka1" placeholder="Angka 1">
+    
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    
+    <input type="number" id="angka2" placeholder="Angka 2">
+    
+    <button onclick="hitung()">Hitung</button>
+
+    <div id="hasil"></div>
+  </div>
+
+  <!-- Hubungkan ke file JavaScript -->
+  <script src="calculator.js"></script>
+</body>
+</html>

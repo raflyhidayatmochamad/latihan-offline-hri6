@@ -1,0 +1,127 @@
+/* ==== Background & Layout ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #fccd25);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 70px;      /* tambahkan ini */
+}
+/* ==== Container Kalkulator ==== */
+.calculator-container {
+    margin: 90px 90px 90px 90px;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 320px;
+}
+
+.calculator-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* ==== Input & Select ==== */
+input[type="number"], select {
+  width: 60%;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus, select:focus {
+  border-color: #2575fc;
+}
+
+/* ==== Tombol ==== */
+button {
+  width: 85%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: #2575fc;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background: #6a11cb;
+  transform: scale(1.05);
+}
+
+/* ==== Hasil ==== */
+#hasil {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #333;
+}
+#hasil.error {
+  color: red;
+}
+
+#operator {
+  width: 65%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background-color: #3498db;       /* biru */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;              /* sudah sama dengan website_kalkulator.css */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;                 /* navbar tetap di atas */
+  top: 0;                          /* posisi di atas */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffd700; /* kuning saat hover */
+}

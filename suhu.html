@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Konversi Suhu</title>
+  <link rel="stylesheet" href="suhu.css">
+</head>
+<body>
+      <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Kalkulator Ku</div>
+    <ul class="nav-links">
+      <li><a href="website_kalkulator.html">Home</a></li>
+      <li><a href="index.html">Kalkulator</a></li>
+      <li><a href="suhu.html">Kalkulator Konversi</a></li>
+      <li><a href="bmi.html">Kalkulator BMI</a></li>
+    </ul>
+  </nav>
+  <script src="suhu.js"></script>
+
+  <div class="calculator-container">
+    <h2>Konversi Suhu dari Celsius</h2>
+
+    <input type="number" id="celsius" placeholder="Masukkan suhu (°C)">
+    
+    <button onclick="konversiSuhu()">Konversi</button>
+
+    <div id="hasil"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
